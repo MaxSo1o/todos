@@ -51,21 +51,25 @@ const App: React.FC = () => {
 
     return (
         <>
-            <h1>todos</h1>
-            <div className="todo-app">
-                <TodoForm onAdd={addTodo} />
-                <TodoList
-                    todos={todos}
-                    filter={filter}
-                    onToggle={toggleTodo}
-                    onEdit={editTodo}
-                    onDelete={deleteTodo}
-                />
-                <TodoFooter
-                    currentFilter={filter}
-                    onFilterChange={setFilter}
-                    clearCompleted={clearCompleted}
-                    todos={todos}/>
+            <div className="container">
+                <h1>todos</h1>
+                <div className="todo-app">
+                    <TodoForm onAdd={addTodo} />
+                    <TodoList
+                        todos={todos}
+                        filter={filter}
+                        onToggle={toggleTodo}
+                        onEdit={editTodo}
+                        onDelete={deleteTodo}
+                    />
+                    <TodoFooter
+                        currentFilter={filter}
+                        onFilterChange={setFilter}
+                        clearCompleted={clearCompleted}
+                        todos={todos}/>
+                </div>
+                <div className="back-lists1"></div>
+                <div className="back-lists2"></div>
             </div>
         </>
     );

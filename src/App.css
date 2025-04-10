@@ -14,6 +14,32 @@ body {
   width: 100%;
 }
 
+.container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+
+  .back-lists1 {
+    background: #fff;
+    height: 4px;
+    width: 97%;
+    z-index: 4;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .back-lists2 {
+    background: #fff;
+    height: 4px;
+    width: 94%;
+    z-index: 2;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
 h1 {
   font-size: 4rem;
   text-align: center;
@@ -22,10 +48,10 @@ h1 {
 }
 
 .todo-app {
-  max-width: 600px;
-  margin: 0 auto;
   background: #FFF;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 form {
@@ -56,7 +82,6 @@ form {
     border: none;
     border-bottom: 1px solid #ccc;
     font-size: 1.5rem;
-
 
     &:focus {
       outline: none;
