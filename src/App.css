@@ -180,3 +180,58 @@ form {
     }
   }
 }
+
+@media (max-width: 600px) {
+
+
+
+  .todo-app {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .container {
+    .back-lists1 {
+      width: 86%;
+    }
+
+    .back-lists2 {
+      height: 4px;
+      width: 83%;
+    }
+  }
+
+  .todo-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    color: #e8e8e8;
+
+    span {
+      font-size: 0.7rem;
+    }
+    .filters {
+      display: flex;
+      gap: 5px;
+    }
+
+    button {
+      padding: 5px 10px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 0.7rem;
+
+      &:hover {
+        color: #e9dad9;
+      }
+
+      &.active {
+        border: 1px solid #e9dad9;
+        border-radius: 5px;
+        padding: 4px 9px;
+      }
+    }
+  }
+}
